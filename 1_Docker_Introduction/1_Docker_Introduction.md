@@ -1,4 +1,4 @@
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/a24b6086-9cfb-42c3-9bfa-3145032b89e8/95d804ba-98ce-4760-84b3-47d7175d67e9/image.png)
+<img width="570" alt="image" src="https://github.com/user-attachments/assets/606dc302-aa14-45b6-bf57-1707106063fc">
 
 ## Q1. Docker가 뭐야?
 
