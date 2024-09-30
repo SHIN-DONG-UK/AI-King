@@ -17,7 +17,8 @@
 
 ## 2. Data Definition
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/a24b6086-9cfb-42c3-9bfa-3145032b89e8/22212c83-2e01-4d78-9ac8-7ff5de4365ee/image.png)
+<img width="399" alt="스크린샷 2024-09-30 오후 7 24 43" src="https://github.com/user-attachments/assets/bcadde55-1875-4533-a9db-5036175962be">
+
 
 - 위와 같이 x_train과 y_train을 구분해서 적어준다
 
@@ -30,7 +31,8 @@ y_train = torch.FloatTensor([[2], [4], [6]])
 
 ## Hypothesis
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/a24b6086-9cfb-42c3-9bfa-3145032b89e8/8a2d0e2b-774a-4bd8-93c5-1c767651fe46/image.png)
+<img width="310" alt="스크린샷 2024-09-30 오후 7 24 26" src="https://github.com/user-attachments/assets/ff2cf188-81c0-4ded-91d9-6cf74a406f1f">
+
 
 - W와 b를 학습시킨다
 - 처음에는 어떤 값을 입력받아도 0을 예측하도록 W와 b를 0으로 초기화한다
@@ -47,7 +49,9 @@ hypothesis = x_train * W + b
 - 학습을 잘 하려면, 우리 모델이 얼마나 정답에 가까운지 알아야 함
 - 정답과 얼마나 가까운지의 숫자를 cost 혹은 loss라고 함
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/a24b6086-9cfb-42c3-9bfa-3145032b89e8/c1244a7e-5f1a-4514-a84a-d600a625ebff/image.png)
+<img width="739" alt="스크린샷 2024-09-30 오후 7 14 57" src="https://github.com/user-attachments/assets/ef1fb723-3fcc-4b6d-a915-a1bd06ac8032">
+
+
 
 - 손실 함수(loss function) : “정답에 얼마나 가까운지”를 계산하는 함수(Mean Squared Error, MSE)
 - MSE : 예측값과 정답값의 차이를 제곱해서 평균낸거
@@ -88,14 +92,16 @@ optimizer.step()
 - 그럼 w가 1에 가까울수록 잘 학습된 것
 - loss function을 MSE로 하면 w와 cost의 관계는 다음 그림과 같다
 
-![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/a24b6086-9cfb-42c3-9bfa-3145032b89e8/fa927630-ae9c-46a0-a9ef-c79082f8aedb/image.png)
+<img width="375" alt="스크린샷 2024-09-30 오후 7 43 33" src="https://github.com/user-attachments/assets/1efe7f64-61b9-4e7a-bc24-72d7b534ff0a">
+
 
 - 그럼 여기서 우리가 해야할 것은?
 - 곡선을 내려가자
 - 기울기가 양수면 기울기가 작아져야하고, 기울기가 음수면 기울기가 커져야 함
 - 기울기가 가파르면 크게 변하고, 기울기가 작으면 작게 변해야 기울기가 0에 수렴하여 오차가 작아질 수 있다
     
-    ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/a24b6086-9cfb-42c3-9bfa-3145032b89e8/b263e11b-a558-4f12-bb80-b8d7140cdd63/image.png)
+<img width="651" alt="스크린샷 2024-09-30 오후 9 11 24" src="https://github.com/user-attachments/assets/be3db8bd-c0d8-406a-bf3b-f39a6e9b57b9">
+
     
 - 이렇게 기울기로 어떻게 w가 변해야 하는지 정할 수 있다
 - 이러한 기울기를 “Gradient”
